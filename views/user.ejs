@@ -1,0 +1,237 @@
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800,900%7cRaleway:300,400,500,600,700" rel="stylesheet"> -->
+
+<%- include('partials/header') %>
+
+<link rel="stylesheet" href="css/user.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body> -->
+    <body id="pagecontent">
+<div class="container cont-container cont-small">
+  <nav class="navbar navbar-expand-sm  fixed-top">
+    <a class="navbar-brand logo" href="#"><img class="navbar-brand" src="" style="height: 60px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav d-flex ">
+        <li class="nav-item">
+          <a class="nav-link" href="#home"><%= userName%></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ourwork">Our Work</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+      <div class="d-inline-flex ml-auto nav-social">
+        <a href="https://www.facebook.com/AntenaGames-110509330561115" target="_blank"><i class='fa fa-facebook' target="_blank" style='font-size:28px;'></i></a>
+        <a href="https://www.pinterest.com/antenagames10/" target="_blank"><i class='fa fa-pinterest'  style='font-size:28px;'></i></a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <img class="img-fluid" src="https://images.pexels.com/photos/2036650/pexels-photo-2036650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+</div>
+
+<div id="home" class="container-fluid cont home">
+  <h2 class=""><%= userName %></h2>
+  <hr class="hr-class">
+  <div class="first-game row" style="margin-top:50px; margin-bottom: 20px">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="https://images.pexels.com/photos/1893536/pexels-photo-1893536.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-4 img-fluid">
+          </div>
+          <div class="col-sm-4">
+            <img src="https://res.cloudinary.com/daa09eu5f/image/upload/v1583689896/bb2_ii66cg.png" class="img-4 img-fluid">
+          </div>
+          <div class="col-sm-4">
+            <img src="https://res.cloudinary.com/daa09eu5f/image/upload/v1583689900/bb3_qccqwb.png" class="img-4 img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 text-box">
+        <h3 class="text-center first-games">BALLBOY</h3>
+        <div class="text-game">
+          <p>
+            It was a beautiful sunny day. BallBoy and his friend BallGirl enjoyed singing in the
+            garden, when suddenly the sky darkened and strong noise filled the sky. Evil cubes suddenly appeared from neighbour village and kidnapped BallGirl. BallBoy was completely hopeless.
+            <br>
+            BallBoy has to defeat evil cubes and save BallGirl. So help him on his mission.
+          </p>
+          <p>
+            You can defeat evil cubes if the ball has the same color as evil cube when
+            they collide. Touch/press left part of screen for moving the character(ball) left.
+            Touch/press right part of screen for moving the character right. Cubes have four
+            colors(blue, red, green and yellow). The game has 45 awesome and well-designed levels.
+          </p>
+        </div>
+        <div class="row">
+          <div class="play-game">
+            <a href="https://play.google.com/store/apps/details?id=com.antenagames.ballboy" target="_blank" class="googleplay" title="Android" >
+              <img src="https://res.cloudinary.com/daa09eu5f/image/upload/v1583689824/google-p_xrmgb1.png" class="googleplay-img">
+            </a>
+            <!--
+            <a href="ios.html" class="appstore" title="iOS">
+              <img src="https://res.cloudinary.com/daa09eu5f/image/upload/v1583689849/appstore_eq85ic.png" class="appstore-img">
+            </a>
+            -->
+          </div>
+          <div class="social-games ml-auto">
+            <a href="https://www.facebook.com/BallBoy-110497490561791/" target="_blank"><i class='fa fa-facebook' target="_blank" style='font-size:28px;'></i></a>
+            <a href="https://www.pinterest.com/antenagames10/" target="_blank"><i class='fa fa-pinterest' target="_blank" style='font-size:28px;'></i></a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+
+     <div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">What's Going On</h1>
+        </div>
+
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
+            <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+        </div>
+        <br/>
+
+
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="contact pt-100 pb-100" id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 mx-auto text-center">
+                  <div class="section-title mb-100">
+                     <p>get in touch</p>
+                     <h4>contact me</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="row text-center">
+                  <div class="col-md-6">
+                     <form action="#" class="contact-form">
+                        <div class="row">
+                           <div class="col-xl-12">
+                              <input type="text" placeholder="name">
+                           </div>
+                           <div class="col-xl-12">
+                              <input type="text" placeholder="email">
+                           </div>
+                           <div class="col-xl-12">
+                              <input type="text" placeholder="subject">
+                           </div>
+                           <div class="col-xl-12">
+                              <input type="text" placeholder="telephone">
+                           </div>
+                           <div class="col-xl-12">
+                              <textarea placeholder="message" cols="30" rows="10"></textarea>
+                              <input type="submit" value="send message">
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                                    <div class="col-md-2">
+                                        <div class="vertical-line"></div>
+                                        </div>
+                  <div class="col-md-4">
+                     <div class="single-contact">
+                        <i class="fa fa-map-marker"></i>
+                        <h5>Address</h5>
+                        <p>661 Lefferts, NY 11203, USA</p>
+                     </div>
+                     <div class="single-contact">
+                        <i class="fa fa-phone"></i>
+                        <h5>Phone</h5>
+                        <p>(+1) 517 397 7100</p>
+                     </div>
+                     <div class="single-contact">
+                        <i class="fa fa-envelope"></i>
+                        <h5>Email</h5>
+                        <p>infor@personal.com</p>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </section>
+      <script type="script/userJquery.js" charset="utf-8" >
+
+      </script>
+  <%- include('partials/footer') %>

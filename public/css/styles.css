@@ -1,0 +1,25 @@
+#title{
+  background-color: #6ba8a9;
+}
+
+.container-fluid {
+  padding: 5% 5%
+}
+
+#exotic_destinations{
+  background-color: pink;
+}
+
+
+.exotic_destinations_image{
+   width: auto;
+   height: auto;
+   max-width: 500px;
+   max-height: 500px;
+
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
