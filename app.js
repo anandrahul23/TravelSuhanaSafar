@@ -8,6 +8,8 @@ const mongoose = require("mongoose");
 
 const app = express();
 
+const encrypt = require("mongoose-encryption");
+
 app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({
@@ -22,12 +24,16 @@ mongoose.connect("mongodb://localhost:27017/userDB", {
   useNewUrlParser: true
 });
 
-const userSchema = {
+const userSchema = new mongoose.Schema({
   name: String,
   email: String,
   phone: String,
   password: String
-};
+});
+
+const secret = "I have had an awesome childhood, with principles and faith good luck and blessings of god and Gurus. I want that bleesing again in my life";
+
+userSchema.plugin(encrypt, {secret: secret, encryptedFields:["password"]})
 
 const User = mongoose.model("User", userSchema);
 
@@ -84,7 +90,7 @@ app.route("/register")
           if (user) {
             console.log("user  found, moving to logn page");
             res.render("login", {
-              loginMessage: user.name + "is already registered, please login"
+              loginMessage: user.name + " is already registered, please login"
             });
           } else {
           console.log("user not found, saving in db");
